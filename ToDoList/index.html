@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" />
+    <title>Hello! From HTML</title>
+  </head>
+
+  <body>
+    <h2 id="clock">00:00</h2>
+    <div id="input">
+      <div class="form-container">
+        <form class="hidden" id="login-form">
+          <input
+            style="display: inline"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+        </form>
+        <div class="row">
+          <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="Write a To Do and press enter"
+            required
+          />
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header" tabindex="0">To Do List</div>
+          <div class="collapsible-body" style="display: block">
+            <ul id="todo-list"></ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
